@@ -518,7 +518,6 @@ argsp.add_argument("path",
                    help="The EMPTY directory to checkout on.")
 
 
-
 def cmd_checkout(args):
     repo = repo_find()
 
@@ -538,7 +537,6 @@ def cmd_checkout(args):
         os.makedirs(args.path)
 
     tree_checkout(repo, obj, os.path.realpath(args.path).encode())
-
 
 
 def tree_checkout(repo, tree, path):
